@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 
 :root {
-    --primary-color: #4a4871;
+    --primary-color-1: #4a4871;
     --primary-color-2: #3e3d5e;
+
     --color-neutral-1: #e5e7eb;
     --color-neutral-2:#343434;
     --color-neutral-3: #262626;
@@ -13,4 +14,84 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--primary-color-2);
+}
+
+.calculator {
+    background-color: var(--color-neutral-3);
+    color: var(--color-neutral-1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.323);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.input-container {
+    margin: 25px 0;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group input {
+    background-color: var(--color-neutral-2);
+    color: var(--color-neutral-1);
+    padding: 8px;
+    border: 1px solid var(--primary-color-1);
+    border-radius: 6px;
+    width: 100px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.input-group input::-webkit-outer-spin-button,
+.input-group input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.input-group input:focus-visible {
+    outline: transparent;
+}
+
+.input-group span {
+    background-color: var(--color-neutral-2);
+    padding: 0px 15px;
+}
+
+.input-group p {
+    background-color: var(--primary-color-1);
+    border-radius: 6px;
+    padding: 10px;
+    width: 100px;
+}
+
+.input-text {
+    margin: 15px 0;
+}
+
+#calculate {
+    background-color: var(--primary-color-1);
+    color: var(--color-neutral-1);
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color .5s ease;
+}
+
+#calculate:hover {
+    background-color: var(--primary-color-2);
 }
